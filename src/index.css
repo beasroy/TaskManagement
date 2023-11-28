@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+
+.main {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main:before {
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
+
+.main:after {
+  content: "";
+  background-image: url("/src/assets/grid.svg");
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 900px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(250, 50%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, rgb(42, 206, 56) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgb(115, 95, 169) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, rgb(238, 181, 83) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, rgb(38, 59, 108) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, rgb(197, 15, 67) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}
+.table {
+  overflow:auto;
+  
+  border: 1px solid #ccc;
+  background: rgba(199, 199, 199, 0.2);
+  box-shadow: inset 10px -50px 94px 0 rgb(199, 199, 199, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto ;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black pb-2;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+}
+
+.pink_gradient {
+  @apply bg-gradient-to-r from-fuchsia-500 via-pink-700 to-rose-400 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-400 sm:text-lg text-center max-w-3xl;
+}
+
+
+
+
+.rose_gradient {
+  @apply font-black bg-gradient-to-r from-pink-500 to-rose-700 bg-clip-text text-transparent;
+}
+
+/* .table{
+  @apply overflow-auto rounded-xl border border-gray-300 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+} */
+
