@@ -79,6 +79,7 @@ const TaskForm = ({ isOpen, onClose,onFormSubmit,initialData }) => {
               <input
                 type="text"
                 id="taskName"
+                data-testid="taskNameInput"
                 placeholder="Enter task name"
                 value={formData.taskName}
                 onChange={(e) => setFormData({ ...formData, taskName: e.target.value })}

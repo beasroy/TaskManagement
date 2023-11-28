@@ -126,12 +126,16 @@ const TaskList = () => {
                                
                                 <td className="px-3 py-4">{task.taskPriority}</td>
                                 <td>
-                                    <button onClick={() => openEditForm(index)} className="text-blue-500 rounded border-2 border-blue-800">
+                                    <button
+                                    data-testid="editTaskButton-0"
+                                     onClick={() => openEditForm(index)} className="text-blue-500 rounded border-2 border-blue-800">
                                         <MdEditDocument />
                                     </button>
                                 </td>
                                 <td>
-                                    <button onClick={() => handleTaskDelete(index)} className="text-red-500 rounded border-2 border-red-800">
+                                    <button 
+                                    data-testid="deleteTaskButton-0"
+                                    onClick={() => handleTaskDelete(index)} className="text-red-500 rounded border-2 border-red-800">
                                         <MdDelete />
                                     </button>
 
