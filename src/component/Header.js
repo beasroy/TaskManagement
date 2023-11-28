@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className='w-full h-full flex justify-center items-center flex-col'>
          <nav className='flex flex-row justify-between items-center w-full pt-3 mb-10'>
-          <p>Task</p>
+          <p className='text-3xl font-inter text-pink-800'> Task Minder</p>
             <button type='button' onClick={()=> Window.open('https://github.com/beasroy')} className='black_btn'>Github</button>
         </nav> 
         <h1 className='head_text'>
