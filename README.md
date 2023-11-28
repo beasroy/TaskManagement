@@ -43,7 +43,7 @@ src/
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/your-username/task-management-app.git`
+1. Clone the repository: `git clone https://github.com/beasroy/TaskManagement.git`
 2. Install dependencies: `npm install`
 3. Run the app: `npm start`
 
