@@ -145,7 +145,7 @@ const TaskList = () => {
                     </tbody>
                 </table>
             ) : (
-                <p>No tasks available.</p>
+                <p className=" font-bold text-xl text-blue-900">No tasks available.</p>
             )}
 
         </>

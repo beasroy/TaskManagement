@@ -4,17 +4,15 @@ const Header = () => {
    
   return (
     <header className='w-full h-full flex justify-center items-center flex-col'>
-         <nav className='flex flex-row justify-between items-center w-full pt-3 mb-10'>
-          <p className='text-3xl font-inter text-pink-800'> Task Minder</p>
-            <button type='button' onClick={()=> Window.open('https://github.com/beasroy')} className='black_btn'>Github</button>
-        </nav> 
+        <div className='mt-10'>
         <h1 className='head_text'>
-        Productive 
-        <span className='pink_gradient'> Task Manager</span>
+        Elevate Your Productivity with<br className='max-md:hidden' />
+        <span className='pink_gradient m-5'> Task Management   </span>
       </h1>
       <h2 className='desc'>
-      Plan your daily work and covenient Task Manager for all
+      Seamlessly Manage Tasks with Precision and Ease in the Palm of Your Hand - Your Personal Command Center for Accomplishment."
       </h2>
+      </div>
      
 
     </header>

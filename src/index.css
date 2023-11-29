@@ -42,18 +42,18 @@
   height: fit-content;
   z-index: 3;
   width: 100%;
-  max-width: 900px;
+  max-width: 640px;
   background-image: radial-gradient(
       at 27% 37%,
-      hsla(250, 50%, 61%, 1) 0px,
+      hsla(215, 98%, 61%, 1) 0px,
       transparent 0%
     ),
-    radial-gradient(at 97% 21%, rgb(42, 206, 56) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
     radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, rgb(115, 95, 169) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, rgb(238, 181, 83) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, rgb(38, 59, 108) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, rgb(197, 15, 67) 0px, transparent 50%);
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;
@@ -82,7 +82,6 @@
 .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black pb-2;
 }
-
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
 }
