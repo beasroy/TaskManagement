@@ -58,4 +58,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 The pictures are attached to have a view of my project.
 
-![When NO task available](images\notask.png)
+![When NO task available](images/notask.png)
