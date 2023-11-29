@@ -59,3 +59,18 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 The pictures are attached to have a view of my project.
 
 ![When NO task available](images/notask.png)
+
+After Adding Tasks
+
+![Tasks are added](images/afteraddingtask.png)
+
+Click the checkbox to mark the task as completed
+
+![Tasks Completed](images/clickinhCheckbox.png)
+
+You can sort the task from high to low priority 
+
+![Sorting](images/afterSort.png)
+
+
+
